@@ -1,0 +1,107 @@
+* {
+  background-color: rgb(255, 255, 142);
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  margin: 5em;
+
+  .calc {
+    animation-name: calc-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    scale: 0.4;
+    rotate: -25deg;
+    transform: translate(355px, 305px);
+  }
+  .book {
+    animation-name: book-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    scale: 0.6;
+    rotate: -15deg;
+    transform: translate(100px, -46px);
+  }
+  .paper {
+    animation-name: paper-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    scale: 0.6;
+    rotate: 15deg;
+    transform: translate(-90px, -46px);
+  }
+  .pallete {
+    animation-name: pallete-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    scale: 0.4;
+    rotate: 220deg;
+    transform: translate(300px, -350px);
+  }
+  .pencil {
+    animation-name: pencil-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    scale: 0.8;
+    rotate: 90deg;
+    transform: translate(-100px);
+  }
+}
+
+@keyframes calc-animation {
+  from {
+    transform: translate(355px, 305px);
+  }
+  to {
+    transform: translate(355px, 120px);
+  }
+}
+
+@keyframes book-animation {
+  from {
+    transform: translate(100px, -46px);
+  }
+  to {
+    transform: translate(100px, -100px);
+  }
+}
+
+@keyframes paper-animation {
+  from {
+    transform: translate(-90px, -46px);
+  }
+  to {
+    transform: translate(-90px, -100px);
+  }
+}
+
+@keyframes pallete-animation {
+  from {
+    transform: translate(300px, -350px);
+  }
+  to {
+    transform: translate(300px, -200px);
+  }
+}
+
+@keyframes pencil-animation {
+  from {
+    transform: translate(-100px);
+  }
+  to {
+    transform: translate(-150px);
+  }
+}
