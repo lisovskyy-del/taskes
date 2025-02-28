@@ -1,0 +1,27 @@
+.bar {
+  margin: 0 auto;
+  border: 5px solid orange;
+  width: 350px;
+  height: 65px;
+}
+
+.block {
+  width: 65px;
+  height: 65px;
+  background-color: orange;
+  animation-name: progress-bar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes progress-bar {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(290px);
+  }
+}
