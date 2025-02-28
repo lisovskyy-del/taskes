@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+  margin: 10em;
+}
+
+.heart {
+  height: 3em;
+  width: 3.5em;
+  filter: grayscale();
+  transition: transform 2s ease, filter 2s ease;
+}
+
+.heart:hover {
+  transform: scale(4);
+  filter: grayscale(0);
+}
